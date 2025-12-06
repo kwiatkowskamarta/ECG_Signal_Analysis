@@ -22,20 +22,20 @@ The project files are organized as follows:
 
 | File Name | Description |
 | :--- | :--- |
-| `ECG Signal Analysis.mlx` | **Main Live Script.** Contains the source code, visualizations, and step-by-step analysis logic. |
-| `ECG Signal Analysis.m` | **Plain Code.** An exported version of the logic for standard MATLAB execution without formatting. |
-| `RESP2.mat` | **Dataset.** The input quadrature signal data (2 columns) used for testing the algorithm. |
-| `Project_article.pdf`| **Project Article.** The original scientific draft describing the methodology and results (in Polish). |
-| `ECG Signal Analysis.pdf` | **Full Report.** A PDF export of the Live Script results and plots. |
+| `ECG Signal Analysis.mlx` | Main Live Script. Contains the source code, visualizations, and step-by-step analysis logic. |
+| `ECG Signal Analysis.m` | Plain Code. An exported version of the logic for standard MATLAB execution without formatting. |
+| `RESP2.mat` | Dataset. The input quadrature signal data (2 columns) used for testing the algorithm. |
+| `Project_article.pdf`| Project Article. The original scientific draft describing the methodology and results (in Polish). |
+| `ECG Signal Analysis.pdf` | Full Report. A PDF export of the Live Script results and plots. |
 
 ## How to Run
-1.  **Clone the repository:**
+1.  Clone the repository:
     ```bash
-    git clone [https://github.com/kwiatkowskamarta/REPO-NAME.git](https://github.com/kwiatkowskamarta/REPO-NAME.git)
+    git clone (https://github.com/kwiatkowskamarta/ECG_Signal_Analysis.git)
     ```
-2.  **Open MATLAB.**
-3.  **Load the project:** Open `ECG Signal Analysis.mlx`.
-4.  **Run the analysis:** Ensure `RESP2.mat` is in the same directory. Run the script to generate the frequency analysis plots and statistics.
+2.  Open MATLAB.
+3.  Load the project: Open `ECG Signal Analysis.mlx`.
+4.  Run the analysis: Ensure `RESP2.mat` is in the same directory. Run the script to generate the frequency analysis plots and statistics.
 
 ## Author
-* **Marta Kwiatkowska** - *Warsaw University of Technology*
+**Marta Kwiatkowska** - *Warsaw University of Technology*
