@@ -1,8 +1,5 @@
 # ECG Signal Analysis and Filtering
 
-[![View on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/your-link-here)
-[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=[YOUR_GITHUB_USERNAME]/[REPO_NAME])
-
 ## Overview
 This project processes and analyzes [describe data, e.g., biomedical signals] to detect [describe goal, e.g., heart rate anomalies]. It was developed as part of the Biological Signal Processing (PSB) course.
 
