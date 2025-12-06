@@ -1,35 +1,41 @@
-# ECG Signal Analysis and Filtering
+# Fetal Breathing Movement Detection via Doppler Signals
 
-## Overview
-This project processes and analyzes [describe data, e.g., biomedical signals] to detect [describe goal, e.g., heart rate anomalies]. It was developed as part of the Biological Signal Processing (PSB) course.
+## Project Overview
+This project implements a non-invasive method for detecting Fetal Breathing Movements (FBM) using ultrasonic Doppler signals. Fetal breathing movements - rhythmic contractions of the diaphragm - are a critical indicator of the fetus's central nervous system development and overall physiological health.
 
-The project utilizes [mention key methods, e.g., Fourier Transform (FFT), Butterworth filters, and Pan-Tompkins algorithm].
+The algorithm processes raw Doppler signals to identify characteristic breathing patterns, enabling the calculation of statistical parameters such as mean frequency and standard deviation to assess the regularity and intensity of fetal activity.
 
-## Key Results
-![Main Result Graph](images/main_plot.png)
-*Figure 1: Comparison of the raw signal (top) vs. the filtered signal (bottom).*
+This project was developed at the Institute of Metrology and Biomedical Engineering, Warsaw University of Technology.
 
-## Features
-* **Noise Reduction:** Implements [Filter Name] to remove powerline interference (50/60Hz).
-* **Feature Extraction:** Automatically detects peaks/events in the signal.
-* **Visualization:** Generates dynamic plots for signal verification.
+## Technical Details
+The analysis is performed on quadrature Doppler signals with the following specifications:
+* Signal Type: Complex Doppler signal (Quadrature)
+* Sampling Frequency: 2000 Hz
+* Ultrasound Frequency: 2 MHz
+* Methodology:
+    * Bandpass filtration to eliminate noise.
+    * Amplitude extraction of the Doppler signal.
+    * Frequency analysis to isolate pseudo-respiratory patterns.
 
 ## Repository Structure
-* `src/`: Contains the original Live Script (`.mlx`) and the plain MATLAB code (`.m`).
-* `data/`: Sample datasets used for testing.
-* `docs/`: Full project report in PDF format.
+The project files are organized as follows:
 
-## Requirements
-* MATLAB R2022b or later
-* Signal Processing Toolbox
+| File Name | Description |
+| :--- | :--- |
+| `ECG Signal Analysis.mlx` | **Main Live Script.** Contains the source code, visualizations, and step-by-step analysis logic. |
+| `ECG Signal Analysis.m` | **Plain Code.** An exported version of the logic for standard MATLAB execution without formatting. |
+| `RESP2.mat` | **Dataset.** The input quadrature signal data (2 columns) used for testing the algorithm. |
+| `Project_article.pdf`| **Project Article.** The original scientific draft describing the methodology and results (in Polish). |
+| `ECG Signal Analysis.pdf` | **Full Report.** A PDF export of the Live Script results and plots. |
 
 ## How to Run
-1.  Clone the repository:
+1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+    git clone [https://github.com/kwiatkowskamarta/REPO-NAME.git](https://github.com/kwiatkowskamarta/REPO-NAME.git)
     ```
-2.  Open `src/projekt_PSB.mlx` in MATLAB.
-3.  Run the script to generate the analysis.
+2.  **Open MATLAB.**
+3.  **Load the project:** Open `ECG Signal Analysis.mlx`.
+4.  **Run the analysis:** Ensure `RESP2.mat` is in the same directory. Run the script to generate the frequency analysis plots and statistics.
 
 ## Author
-Marta Kwiatkowska
+* **Marta Kwiatkowska** - *Warsaw University of Technology*
